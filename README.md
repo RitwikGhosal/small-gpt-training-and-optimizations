@@ -1,6 +1,8 @@
 # Training a small GPT on a T4: an optimization log
 
-I built a character-level GPT in PyTorch, then used it to explore a practical question: which training optimizations actually help on a single NVIDIA T4? Rather than changing everything at once, I added compilation, an attention rewrite, mixed precision, and a fused optimizer in sequence. I also tested whether doubling the batch size improved throughput.
+A character-level GPT was implemented in PyTorch, following Andrej Karpathy’s Neural Networks: Zero to Hero series, and was subsequently used to investigate which training optimizations provide measurable benefits on a single NVIDIA T4 GPU. Compilation, scaled dot-product attention, mixed precision, and a fused optimizer were introduced incrementally to evaluate their effects on training performance. The impact of doubling the batch size on training throughput was also examined.
+
+This remains a small-scale experimental model, with its limitations in training quality reflected in the gap between training and validation loss. Nevertheless, the optimization techniques explored here are relevant to large-scale pretraining, where improvements in computational efficiency can translate into substantial savings in training time and resources.
 
 This repository records the code used to plot the results and the raw training logs. It is an experiment with a **10.79M-parameter model**, not a claim about performance at large-model scale. The most noticeable result in this set of runs was an increase in *reported cumulative training throughput* from roughly **33.5k to 106.8k token positions/s** (about **3.18×**) at batch size 32. These figures include early-run overhead and should not be confused with warmed-up steady-state throughput.
 
