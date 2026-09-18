@@ -1,0 +1,294 @@
+10.788929 M parameters
+step 0: train loss 4.2210, val loss 4.2301, avg step time 0.00 ms, tokens/step 8,192, tokens/sec 0
+step 200: train loss 2.4281, val loss 2.4476, avg step time 232.55 ms, tokens/step 8,192, tokens/sec 35,227
+step 400: train loss 2.1828, val loss 2.2573, avg step time 242.08 ms, tokens/step 8,192, tokens/sec 33,840
+step 600: train loss 1.8145, val loss 1.9471, avg step time 243.69 ms, tokens/step 8,192, tokens/sec 33,617
+step 800: train loss 1.6274, val loss 1.8146, avg step time 244.83 ms, tokens/step 8,192, tokens/sec 33,460
+step 1000: train loss 1.5216, val loss 1.7206, avg step time 245.21 ms, tokens/step 8,192, tokens/sec 33,408
+step 1200: train loss 1.4482, val loss 1.6553, avg step time 245.31 ms, tokens/step 8,192, tokens/sec 33,394
+step 1400: train loss 1.3919, val loss 1.6238, avg step time 245.27 ms, tokens/step 8,192, tokens/sec 33,400
+step 1600: train loss 1.3554, val loss 1.5906, avg step time 245.16 ms, tokens/step 8,192, tokens/sec 33,416
+step 1800: train loss 1.3269, val loss 1.5586, avg step time 244.99 ms, tokens/step 8,192, tokens/sec 33,438
+step 2000: train loss 1.2978, val loss 1.5436, avg step time 244.89 ms, tokens/step 8,192, tokens/sec 33,452
+step 2200: train loss 1.2648, val loss 1.5380, avg step time 244.96 ms, tokens/step 8,192, tokens/sec 33,442
+step 2400: train loss 1.2542, val loss 1.5321, avg step time 244.99 ms, tokens/step 8,192, tokens/sec 33,438
+step 2600: train loss 1.2283, val loss 1.5174, avg step time 244.89 ms, tokens/step 8,192, tokens/sec 33,452
+step 2800: train loss 1.2140, val loss 1.5052, avg step time 244.94 ms, tokens/step 8,192, tokens/sec 33,445
+step 3000: train loss 1.1938, val loss 1.4906, avg step time 244.90 ms, tokens/step 8,192, tokens/sec 33,450
+step 3200: train loss 1.1838, val loss 1.5122, avg step time 244.84 ms, tokens/step 8,192, tokens/sec 33,459
+step 3400: train loss 1.1611, val loss 1.5004, avg step time 244.77 ms, tokens/step 8,192, tokens/sec 33,468
+step 3600: train loss 1.1490, val loss 1.4912, avg step time 244.69 ms, tokens/step 8,192, tokens/sec 33,479
+step 3800: train loss 1.1392, val loss 1.5100, avg step time 244.60 ms, tokens/step 8,192, tokens/sec 33,491
+step 4000: train loss 1.1171, val loss 1.4878, avg step time 244.52 ms, tokens/step 8,192, tokens/sec 33,502
+step 4200: train loss 1.1075, val loss 1.4841, avg step time 244.44 ms, tokens/step 8,192, tokens/sec 33,513
+step 4400: train loss 1.0881, val loss 1.5004, avg step time 244.40 ms, tokens/step 8,192, tokens/sec 33,519
+step 4600: train loss 1.0832, val loss 1.4909, avg step time 244.34 ms, tokens/step 8,192, tokens/sec 33,527
+step 4800: train loss 1.0697, val loss 1.5074, avg step time 244.29 ms, tokens/step 8,192, tokens/sec 33,534
+step 4999: train loss 1.0507, val loss 1.4909, avg step time 244.23 ms, tokens/step 8,192, tokens/sec 33,542
+
+An coyfine be begin, a scurity,--
+Libing me a labody, another instance:
+Nay, is a true muzh unnich me left,--
+His armoning strikeless, a warp-clock for son.
+belong is not wine disgrace; which obey,--
+That in this denyed of guity,--or some love is,--
+
+SICINIUS:
+You that has can fetch right him: mark when
+He has a swift-an-dear receivils.
+
+CORIOLANUS:
+I confiss, it is a tempody child,
+And one thie hath to pence you,
+Since Jupiter's his cause;
+And saints tumulluble past chanbels which
+That he eart 
+
+
+-------with torch.compile---------------------------------
+
+10.788929 M parameters
+W0917 18:02:20.992000 9501 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0: train loss 4.2210, val loss 4.2301, avg step time 0.00 ms, tokens/step 8,192, tokens/sec 0
+step 200: train loss 2.4272, val loss 2.4432, avg step time 453.56 ms, tokens/step 8,192, tokens/sec 18,062
+step 400: train loss 2.1651, val loss 2.2391, avg step time 334.63 ms, tokens/step 8,192, tokens/sec 24,481
+step 600: train loss 1.8029, val loss 1.9458, avg step time 296.22 ms, tokens/step 8,192, tokens/sec 27,655
+step 800: train loss 1.6222, val loss 1.8032, avg step time 276.49 ms, tokens/step 8,192, tokens/sec 29,629
+step 1000: train loss 1.5178, val loss 1.7215, avg step time 264.45 ms, tokens/step 8,192, tokens/sec 30,978
+step 1200: train loss 1.4465, val loss 1.6614, avg step time 256.34 ms, tokens/step 8,192, tokens/sec 31,958
+step 1400: train loss 1.3949, val loss 1.6247, avg step time 250.53 ms, tokens/step 8,192, tokens/sec 32,699
+step 1600: train loss 1.3511, val loss 1.5874, avg step time 246.16 ms, tokens/step 8,192, tokens/sec 33,280
+step 1800: train loss 1.3278, val loss 1.5624, avg step time 242.74 ms, tokens/step 8,192, tokens/sec 33,748
+step 2000: train loss 1.3014, val loss 1.5449, avg step time 240.00 ms, tokens/step 8,192, tokens/sec 34,134
+step 2200: train loss 1.2705, val loss 1.5374, avg step time 237.75 ms, tokens/step 8,192, tokens/sec 34,456
+step 2400: train loss 1.2563, val loss 1.5308, avg step time 235.87 ms, tokens/step 8,192, tokens/sec 34,731
+step 2600: train loss 1.2288, val loss 1.5223, avg step time 234.28 ms, tokens/step 8,192, tokens/sec 34,967
+step 2800: train loss 1.2117, val loss 1.5064, avg step time 232.91 ms, tokens/step 8,192, tokens/sec 35,173
+step 3000: train loss 1.1970, val loss 1.4944, avg step time 231.72 ms, tokens/step 8,192, tokens/sec 35,353
+step 3200: train loss 1.1835, val loss 1.5134, avg step time 230.67 ms, tokens/step 8,192, tokens/sec 35,514
+step 3400: train loss 1.1673, val loss 1.5136, avg step time 229.73 ms, tokens/step 8,192, tokens/sec 35,659
+step 3600: train loss 1.1556, val loss 1.4947, avg step time 228.90 ms, tokens/step 8,192, tokens/sec 35,788
+step 3800: train loss 1.1378, val loss 1.5110, avg step time 228.16 ms, tokens/step 8,192, tokens/sec 35,904
+step 4000: train loss 1.1207, val loss 1.4897, avg step time 227.50 ms, tokens/step 8,192, tokens/sec 36,009
+step 4200: train loss 1.1163, val loss 1.4896, avg step time 226.88 ms, tokens/step 8,192, tokens/sec 36,106
+step 4400: train loss 1.0891, val loss 1.5039, avg step time 226.33 ms, tokens/step 8,192, tokens/sec 36,195
+step 4600: train loss 1.0864, val loss 1.4886, avg step time 225.82 ms, tokens/step 8,192, tokens/sec 36,277
+step 4800: train loss 1.0724, val loss 1.5088, avg step time 225.35 ms, tokens/step 8,192, tokens/sec 36,352
+step 4999: train loss 1.0544, val loss 1.4966, avg step time 224.91 ms, tokens/step 8,192, tokens/sec 36,423
+
+'s harful nestly neck heart.
+Thou hadst the together strike the wound;
+They never leap it praying of Bohemia.
+
+Third Lord Marshal:
+They stay thy hangmen's painsle. Go thee, Abd in thy round,
+Practis, will he far than thee starks he will.
+Most recovengefuse what clife, I would convey,
+I see many eyes shall preceivince his lord:
+And, by since right, my lord, and leave ready his
+Give the oracle honey gave her kiss'd his earth.
+
+Nurse:
+
+JULIET:
+Look how he, and her might there's eldest.
+
+Nurse:
+Fait
+
+
+------------------------------------------------------------
+with torch.compile and flash attention
+
+
+10.788929 M parameters
+W0917 18:26:54.413000 16104 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0: train loss 4.2210, val loss 4.2301, avg step time 0.00 ms, tokens/step 8,192, tokens/sec 0
+step 200: train loss 2.4272, val loss 2.4431, avg step time 455.44 ms, tokens/step 8,192, tokens/sec 17,987
+step 400: train loss 2.1662, val loss 2.2426, avg step time 336.06 ms, tokens/step 8,192, tokens/sec 24,377
+step 600: train loss 1.8025, val loss 1.9456, avg step time 297.43 ms, tokens/step 8,192, tokens/sec 27,543
+step 800: train loss 1.6219, val loss 1.8027, avg step time 277.46 ms, tokens/step 8,192, tokens/sec 29,525
+step 1000: train loss 1.5176, val loss 1.7189, avg step time 265.28 ms, tokens/step 8,192, tokens/sec 30,880
+step 1200: train loss 1.4455, val loss 1.6550, avg step time 257.22 ms, tokens/step 8,192, tokens/sec 31,848
+step 1400: train loss 1.3922, val loss 1.6216, avg step time 251.42 ms, tokens/step 8,192, tokens/sec 32,583
+step 1600: train loss 1.3559, val loss 1.5873, avg step time 247.06 ms, tokens/step 8,192, tokens/sec 33,158
+step 1800: train loss 1.3294, val loss 1.5595, avg step time 243.63 ms, tokens/step 8,192, tokens/sec 33,625
+step 2000: train loss 1.3049, val loss 1.5482, avg step time 240.86 ms, tokens/step 8,192, tokens/sec 34,011
+step 2200: train loss 1.2670, val loss 1.5334, avg step time 238.58 ms, tokens/step 8,192, tokens/sec 34,337
+step 2400: train loss 1.2522, val loss 1.5231, avg step time 236.67 ms, tokens/step 8,192, tokens/sec 34,614
+step 2600: train loss 1.2295, val loss 1.5268, avg step time 235.04 ms, tokens/step 8,192, tokens/sec 34,853
+step 2800: train loss 1.2138, val loss 1.5077, avg step time 233.62 ms, tokens/step 8,192, tokens/sec 35,065
+step 3000: train loss 1.1966, val loss 1.4864, avg step time 232.39 ms, tokens/step 8,192, tokens/sec 35,251
+step 3200: train loss 1.1843, val loss 1.5127, avg step time 231.30 ms, tokens/step 8,192, tokens/sec 35,416
+step 3400: train loss 1.1680, val loss 1.5091, avg step time 230.34 ms, tokens/step 8,192, tokens/sec 35,565
+step 3600: train loss 1.1547, val loss 1.4876, avg step time 229.47 ms, tokens/step 8,192, tokens/sec 35,700
+step 3800: train loss 1.1390, val loss 1.5047, avg step time 228.70 ms, tokens/step 8,192, tokens/sec 35,820
+step 4000: train loss 1.1172, val loss 1.4874, avg step time 228.01 ms, tokens/step 8,192, tokens/sec 35,928
+step 4200: train loss 1.1107, val loss 1.4811, avg step time 227.39 ms, tokens/step 8,192, tokens/sec 36,026
+step 4400: train loss 1.0895, val loss 1.4953, avg step time 226.82 ms, tokens/step 8,192, tokens/sec 36,117
+step 4600: train loss 1.0824, val loss 1.4814, avg step time 226.30 ms, tokens/step 8,192, tokens/sec 36,200
+step 4800: train loss 1.0718, val loss 1.5088, avg step time 225.82 ms, tokens/step 8,192, tokens/sec 36,276
+step 4999: train loss 1.0514, val loss 1.4890, avg step time 225.38 ms, tokens/step 8,192, tokens/sec 36,347
+
+'O hours and learneds her nevy sinkless!
+Hastings that small, disguissember!
+Grief mowhile there, belike, says 'Kate?'
+Apothecaret's: what money's not own past,
+We ne'er bear death? nor I will amaint with her
+Waiting is must unknown: his thrallace?
+Sixford witchcant state up and view myself
+ancient till be spirit. But, sir, Caius.
+They must rise, once Juliet, my comind to hand
+Put they from her noble of your gentle shed
+Aumerlan, for 't an uttories, were in harm, and say,
+'Teres she in a man sed
+
+
+---------------------------------------------------------------------
+all above + with autocast fp16 instead of fp32--------------
+
+
+10.788929 M parameters
+step 0: train loss 4.2210, val loss 4.2301, avg step time 0.00 ms, tokens/step 8,192, tokens/sec 0
+W0917 18:55:26.098000 23697 torch/_inductor/utils.py:1731] [0/1] Not enough SMs to use max_autotune_gemm mode
+step 200: train loss 2.4273, val loss 2.4433, avg step time 399.64 ms, tokens/step 8,192, tokens/sec 20,498
+step 400: train loss 2.1639, val loss 2.2397, avg step time 238.83 ms, tokens/step 8,192, tokens/sec 34,300
+step 600: train loss 1.8017, val loss 1.9456, avg step time 185.76 ms, tokens/step 8,192, tokens/sec 44,099
+step 800: train loss 1.6186, val loss 1.8000, avg step time 159.23 ms, tokens/step 8,192, tokens/sec 51,448
+step 1000: train loss 1.5183, val loss 1.7207, avg step time 143.15 ms, tokens/step 8,192, tokens/sec 57,225
+step 1200: train loss 1.4440, val loss 1.6620, avg step time 132.56 ms, tokens/step 8,192, tokens/sec 61,798
+step 1400: train loss 1.3943, val loss 1.6328, avg step time 125.03 ms, tokens/step 8,192, tokens/sec 65,520
+step 1600: train loss 1.3532, val loss 1.5871, avg step time 119.34 ms, tokens/step 8,192, tokens/sec 68,642
+step 1800: train loss 1.3318, val loss 1.5616, avg step time 114.89 ms, tokens/step 8,192, tokens/sec 71,303
+step 2000: train loss 1.3018, val loss 1.5470, avg step time 111.39 ms, tokens/step 8,192, tokens/sec 73,546
+step 2200: train loss 1.2698, val loss 1.5322, avg step time 108.52 ms, tokens/step 8,192, tokens/sec 75,485
+step 2400: train loss 1.2541, val loss 1.5273, avg step time 106.09 ms, tokens/step 8,192, tokens/sec 77,215
+step 2600: train loss 1.2277, val loss 1.5231, avg step time 104.01 ms, tokens/step 8,192, tokens/sec 78,765
+step 2800: train loss 1.2154, val loss 1.5134, avg step time 102.23 ms, tokens/step 8,192, tokens/sec 80,130
+step 3000: train loss 1.1951, val loss 1.4880, avg step time 100.73 ms, tokens/step 8,192, tokens/sec 81,326
+step 3200: train loss 1.1846, val loss 1.5136, avg step time 99.38 ms, tokens/step 8,192, tokens/sec 82,432
+step 3400: train loss 1.1654, val loss 1.5045, avg step time 98.19 ms, tokens/step 8,192, tokens/sec 83,430
+step 3600: train loss 1.1492, val loss 1.4809, avg step time 97.13 ms, tokens/step 8,192, tokens/sec 84,338
+step 3800: train loss 1.1404, val loss 1.5072, avg step time 96.20 ms, tokens/step 8,192, tokens/sec 85,156
+step 4000: train loss 1.1199, val loss 1.4855, avg step time 95.35 ms, tokens/step 8,192, tokens/sec 85,915
+step 4200: train loss 1.1102, val loss 1.4814, avg step time 94.58 ms, tokens/step 8,192, tokens/sec 86,613
+step 4400: train loss 1.0886, val loss 1.4877, avg step time 93.89 ms, tokens/step 8,192, tokens/sec 87,247
+step 4600: train loss 1.0840, val loss 1.4767, avg step time 93.25 ms, tokens/step 8,192, tokens/sec 87,846
+step 4800: train loss 1.0736, val loss 1.5054, avg step time 92.67 ms, tokens/step 8,192, tokens/sec 88,398
+step 4999: train loss 1.0537, val loss 1.4984, avg step time 92.14 ms, tokens/step 8,192, tokens/sec 88,910
+
+'s hoped yew all not she worse of it?
+Is it to pierce that all house her eyes:
+Come, we are heart believe it.
+
+Third Lady:
+'An I tell your mother's grace,--the liege, almoting
+His fences piliar in manible:
+Suffer in the muster,--he was watching ere now,--
+I may claim, I was ever victories;
+Lascialious govern my gift:
+Now I think, that she birds me murderers my
+swas true--For my deliver'd lips, never hour
+But I waranted to his wife made! I
+Watter her withal. I am forniMatime
+Here. I prithee, the 
+
+
+
+-------------------------------------------------------------------
+with autocast of fp 16 + flash attention  + fused=True in Adam
+
+10.788929 M parameters
+step 0: train loss 4.2210, val loss 4.2301, avg step time 0.00 ms, tokens/step 8,192, tokens/sec 0
+step 200: train loss 2.4271, val loss 2.4433, avg step time 92.61 ms, tokens/step 8,192, tokens/sec 88,461
+step 400: train loss 2.1644, val loss 2.2396, avg step time 85.47 ms, tokens/step 8,192, tokens/sec 95,843
+step 600: train loss 1.8000, val loss 1.9428, avg step time 82.27 ms, tokens/step 8,192, tokens/sec 99,579
+step 800: train loss 1.6179, val loss 1.7992, avg step time 80.76 ms, tokens/step 8,192, tokens/sec 101,440
+step 1000: train loss 1.5164, val loss 1.7187, avg step time 79.97 ms, tokens/step 8,192, tokens/sec 102,436
+step 1200: train loss 1.4482, val loss 1.6616, avg step time 79.38 ms, tokens/step 8,192, tokens/sec 103,206
+step 1400: train loss 1.3926, val loss 1.6252, avg step time 78.87 ms, tokens/step 8,192, tokens/sec 103,862
+step 1600: train loss 1.3524, val loss 1.5849, avg step time 78.51 ms, tokens/step 8,192, tokens/sec 104,345
+step 1800: train loss 1.3285, val loss 1.5581, avg step time 78.23 ms, tokens/step 8,192, tokens/sec 104,714
+step 2000: train loss 1.2948, val loss 1.5361, avg step time 78.00 ms, tokens/step 8,192, tokens/sec 105,020
+step 2200: train loss 1.2684, val loss 1.5342, avg step time 77.82 ms, tokens/step 8,192, tokens/sec 105,264
+step 2400: train loss 1.2540, val loss 1.5258, avg step time 77.67 ms, tokens/step 8,192, tokens/sec 105,475
+step 2600: train loss 1.2287, val loss 1.5279, avg step time 77.54 ms, tokens/step 8,192, tokens/sec 105,655
+step 2800: train loss 1.2176, val loss 1.5111, avg step time 77.42 ms, tokens/step 8,192, tokens/sec 105,817
+step 3000: train loss 1.1960, val loss 1.4871, avg step time 77.32 ms, tokens/step 8,192, tokens/sec 105,951
+step 3200: train loss 1.1860, val loss 1.5136, avg step time 77.23 ms, tokens/step 8,192, tokens/sec 106,070
+step 3400: train loss 1.1667, val loss 1.5096, avg step time 77.15 ms, tokens/step 8,192, tokens/sec 106,179
+step 3600: train loss 1.1497, val loss 1.4888, avg step time 77.08 ms, tokens/step 8,192, tokens/sec 106,277
+step 3800: train loss 1.1398, val loss 1.5178, avg step time 77.01 ms, tokens/step 8,192, tokens/sec 106,370
+step 4000: train loss 1.1215, val loss 1.4850, avg step time 76.95 ms, tokens/step 8,192, tokens/sec 106,453
+step 4200: train loss 1.1125, val loss 1.4882, avg step time 76.90 ms, tokens/step 8,192, tokens/sec 106,526
+step 4400: train loss 1.0889, val loss 1.4998, avg step time 76.85 ms, tokens/step 8,192, tokens/sec 106,599
+step 4600: train loss 1.0865, val loss 1.4846, avg step time 76.80 ms, tokens/step 8,192, tokens/sec 106,667
+step 4800: train loss 1.0737, val loss 1.5142, avg step time 76.76 ms, tokens/step 8,192, tokens/sec 106,722
+step 4999: train loss 1.0565, val loss 1.4980, avg step time 76.72 ms, tokens/step 8,192, tokens/sec 106,777
+
+' may be yet all now in your vesition: hang to
+person this attending here for sick your truth, tuly lifer;
+and 'tis witle 'twere three fare in you.
+
+Second Lady:
+Then almost blessed presently, and safter is, faced
+and seen throng a woman: comfort it is ppectual glimpst
+to put that it most emback you.
+
+First Messenger:
+O heard of any answer! give! o you well made a
+more than amoidge of one to honey: another clamo?
+helend tus a winly as that must keep in, and now a line.
+Why despy she-semple--the 
+
+
+
+------------------------------------------------------
+with everything same as above by batch size 64:
+
+10.788929 M parameters
+W0917 19:19:26.379000 30306 torch/_inductor/utils.py:1731] [0/0] Not enough SMs to use max_autotune_gemm mode
+step 0: train loss 4.2213, val loss 4.2304, avg step time 0.00 ms, tokens/step 16,384, tokens/sec 0
+step 200: train loss 2.3962, val loss 2.4373, avg step time 465.98 ms, tokens/step 16,384, tokens/sec 35,160
+step 400: train loss 1.9250, val loss 2.0335, avg step time 308.18 ms, tokens/step 16,384, tokens/sec 53,163
+step 600: train loss 1.6222, val loss 1.8032, avg step time 256.22 ms, tokens/step 16,384, tokens/sec 63,946
+step 800: train loss 1.4739, val loss 1.6756, avg step time 229.77 ms, tokens/step 16,384, tokens/sec 71,307
+step 1000: train loss 1.3961, val loss 1.6143, avg step time 214.07 ms, tokens/step 16,384, tokens/sec 76,536
+step 1200: train loss 1.3277, val loss 1.5699, avg step time 203.50 ms, tokens/step 16,384, tokens/sec 80,512
+step 1400: train loss 1.2859, val loss 1.5480, avg step time 195.91 ms, tokens/step 16,384, tokens/sec 83,632
+step 1600: train loss 1.2539, val loss 1.5237, avg step time 190.20 ms, tokens/step 16,384, tokens/sec 86,139
+step 1800: train loss 1.2196, val loss 1.5186, avg step time 185.74 ms, tokens/step 16,384, tokens/sec 88,210
+step 2000: train loss 1.1861, val loss 1.5025, avg step time 182.18 ms, tokens/step 16,384, tokens/sec 89,935
+step 2200: train loss 1.1577, val loss 1.5024, avg step time 179.26 ms, tokens/step 16,384, tokens/sec 91,396
+step 2400: train loss 1.1343, val loss 1.5041, avg step time 176.83 ms, tokens/step 16,384, tokens/sec 92,654
+step 2600: train loss 1.1177, val loss 1.5081, avg step time 174.81 ms, tokens/step 16,384, tokens/sec 93,723
+step 2800: train loss 1.0892, val loss 1.5139, avg step time 173.07 ms, tokens/step 16,384, tokens/sec 94,665
+step 3000: train loss 1.0611, val loss 1.5080, avg step time 171.55 ms, tokens/step 16,384, tokens/sec 95,505
+step 3200: train loss 1.0544, val loss 1.5154, avg step time 170.22 ms, tokens/step 16,384, tokens/sec 96,253
+step 3400: train loss 1.0263, val loss 1.5054, avg step time 169.05 ms, tokens/step 16,384, tokens/sec 96,921
+step 3600: train loss 1.0069, val loss 1.5185, avg step time 168.00 ms, tokens/step 16,384, tokens/sec 97,526
+step 3800: train loss 0.9803, val loss 1.5094, avg step time 167.05 ms, tokens/step 16,384, tokens/sec 98,077
+step 4000: train loss 0.9588, val loss 1.5300, avg step time 166.20 ms, tokens/step 16,384, tokens/sec 98,579
+step 4200: train loss 0.9399, val loss 1.5516, avg step time 165.43 ms, tokens/step 16,384, tokens/sec 99,040
+step 4400: train loss 0.9227, val loss 1.5487, avg step time 164.72 ms, tokens/step 16,384, tokens/sec 99,464
+step 4600: train loss 0.8961, val loss 1.5521, avg step time 164.08 ms, tokens/step 16,384, tokens/sec 99,853
+step 4800: train loss 0.8720, val loss 1.5715, avg step time 163.49 ms, tokens/step 16,384, tokens/sec 100,212
+step 4999: train loss 0.8570, val loss 1.5902, avg step time 162.95 ms, tokens/step 16,384, tokens/sec 100,545
+
+Thou wilt no leave on her.
+
+ROMEO:
+My life, to oft, as thou didst therefore!
+As when we stand at love the safe my body
+And poison wringed to thy heart officers?
+Our baller'd blemished round, and despised issue.
+
+JULIET:
+Hast thou shadow these peers with pere act,
+Thou didst not courtiers that can persuion me
+Ere I curn so trained thy Romeo?
+And neamerless, condemn'd rage nutsmey great of life,
+Once another's best his engrave's wife.
+Courage thou hast setain his mortal sway.
+Helen Albind am I sad
+
