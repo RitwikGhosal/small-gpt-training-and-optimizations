@@ -1,6 +1,6 @@
 # Training a small GPT on a T4: an optimization log
 
-A character-level GPT was implemented in PyTorch, following Andrej Karpathy’s Neural Networks: Zero to Hero series, and was subsequently used to investigate which training optimizations provide measurable benefits on a single NVIDIA T4 GPU. Compilation, scaled dot-product attention, mixed precision, and a fused optimizer were introduced incrementally to evaluate their effects on training performance. The impact of doubling the batch size on training throughput was also examined.
+A character-level GPT was implemented in PyTorch (just pretraining), following Andrej Karpathy’s Neural Networks: Zero to Hero series, and was subsequently used to investigate which training optimizations provide measurable benefits on a single NVIDIA T4 GPU. Compilation, scaled dot-product attention, mixed precision, and a fused optimizer were introduced incrementally to evaluate their effects on training performance. The impact of doubling the batch size on training throughput was also examined.
 
 This remains a small-scale experimental model, with its limitations in training quality reflected in the gap between training and validation loss. Nevertheless, the optimization techniques explored here are relevant to large-scale pretraining, where improvements in computational efficiency can translate into substantial savings in training time and resources.
 
