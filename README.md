@@ -1,12 +1,21 @@
 # Training a small GPT on a T4: an optimization log
 
-A character-level GPT was implemented in PyTorch (just pretraining), following Andrej Karpathy’s Neural Networks: Zero to Hero series, and was subsequently used to investigate which training optimizations provide measurable benefits on a single NVIDIA T4 GPU. Compilation, scaled dot-product attention, mixed precision, and a fused optimizer were introduced incrementally to evaluate their effects on training performance. The impact of doubling the batch size on training throughput was also examined.
+A character-level GPT was first implemented in PyTorch, following Andrej Karpathy’s *Neural Networks: Zero to Hero* series, and used as a small controlled setup to study which training optimizations actually helped on a single NVIDIA T4 GPU. `torch.compile`, scaled dot-product attention, FP16 mixed precision, fused AdamW, and a larger batch size were introduced incrementally so their effects on training throughput could be observed rather than simply assumed.
 
-This remains a small-scale experimental model, with its limitations in training quality reflected in the gap between training and validation loss. Nevertheless, the optimization techniques explored here are relevant to large-scale pretraining, where improvements in computational efficiency can translate into substantial savings in training time and resources.
+That first model had **10.79M parameters** and was trained only for next-token prediction on Shakespeare. The largest observed change in the logged runs came from the full optimized stack, where reported cumulative throughput increased from roughly **33.5k to 106.8k token positions/s** at batch size 32. These numbers include compilation and early warm-up effects, so they should not be interpreted as clean steady-state benchmarks.
 
-This repository records the code used to plot the results and the raw training logs. It is an experiment with a **10.79M-parameter model**, not a claim about performance at large-model scale. The most noticeable result in this set of runs was an increase in *reported cumulative training throughput* from roughly **33.5k to 106.8k token positions/s** (about **3.18×**) at batch size 32. These figures include early-run overhead and should not be confused with warmed-up steady-state throughput.
+The project then continued beyond that initial optimization study. A larger **~27.47M-parameter GPT** was trained from scratch on TinyStories using a custom BPE tokenizer and the optimized training setup developed earlier. From there, the experiment was extended through the rest of a small language-model pipeline: checkpoint selection, response-only supervised fine-tuning on TinyStoriesInstruct, dropout ablations, LoRA adaptation, and fixed-prompt comparisons between the pretrained, fully fine-tuned, and parameter-efficiently adapted models.
 
-## Model and measurement setup
+The aim of the repository is therefore not to present a competitive language model or claim large-scale performance. It is a hands-on study of the mechanics involved in training and adapting a GPT under a realistic hardware constraint: **one NVIDIA T4**. The repository keeps the raw logs, plots, training code, preprocessing decisions, failures, and implementation details that came up along the way, including mixed-precision training, compiled execution, instruction masking, context-length decisions, and LoRA-specific debugging.
+
+## TL;DR
+
+- Built a **10.79M-parameter character-level GPT** from scratch in PyTorch and used it to study `torch.compile`, SDPA, FP16 mixed precision, fused AdamW, and batch-size effects on a single NVIDIA T4.
+- Extended the project to a **~27.47M-parameter GPT** pretrained from scratch on TinyStories using a custom BPE tokenizer and the optimized training stack.
+- Added **response-only SFT on TinyStoriesInstruct**, including a dropout ablation, checkpoint selection, and fixed-prompt qualitative evaluation.
+- Compared **full fine-tuning vs LoRA** from the same pretrained checkpoint, documenting both performance differences and the practical implementation/debugging details.
+
+## Model and measurement setup for first model
 
 | Item | Setting |
 | --- | --- |
