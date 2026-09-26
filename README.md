@@ -138,18 +138,6 @@ The next experiment should separate compilation cost from warm execution: compil
 The source log, plotting notebook, and figures are included in this repository. From the repository root:
 
 Observations are in  `boga_llm_0.txt`. The actual notebook used is `boga_llm_0.ipynb`
-```text
-.
-├── README.md
-├── boga_llm_0.txt
-├── boga_llm_0.ipynb
-└── figures/
-    ├── 01_throughput_vs_steps.png
-    ├── 02_step_time_vs_steps.png
-    ├── 03_validation_loss_vs_tokens.png
-    ├── 04_batch_size_throughput.png
-    ├── 05_generalization_by_batch.png
-```
 
 This repository provides the recorded log and plotting workflow; the original training notebook, complete dependency versions, hardware profiler traces, and saved checkpoints are not included here, so it is **not yet a fully reproducible training benchmark**.
 
@@ -393,8 +381,11 @@ validation loss ≈ 1.4173
 ```
 This best validation checkpoint rather than the final optimizer state was used as the starting point for the downstream adaptation experiments.
 
-# Pretrained figures here
-Figure 6. Training and validation loss for the ~27.47M-parameter TinyStories pretraining run. The selected downstream checkpoint corresponds to the best observed validation loss rather than necessarily the final update.
+![TinyStories pretraining loss](figures/pretrain_loss.png)
+*Figure 6. Training and validation loss for the ~27.47M-parameter TinyStories pretraining run. The selected downstream checkpoint corresponds to the best observed validation loss rather than necessarily the final update.*
+
+![TinyStories pretraining loss](figures/pretrain_lr.png)
+*Figure 7. Learning rate schedule*
 
 
 ### 14. From language modeling to supervised instruction tuning
@@ -628,7 +619,7 @@ Warmup uses:
 if it < warmup_iters:
     return (learning_rate* (it + 1) / warmup_iters)
 ```
-and Aater warmup, the learning rate follows cosine decay toward the minimum LR.
+and After warmup, the learning rate follows cosine decay toward the minimum LR.
 
 ### 23. Interpreting SFT step counts
 
@@ -654,9 +645,6 @@ The primary full-SFT experiment extended training to: 3200 steps, with base-mode
 
 The best checkpoint occurred at: 3000, with response-only validation loss: 1.0995801
 
-# figure placement
-Figure 8. Response-only training and validation loss for the 3,200-step full fine-tuning run initialized from the best pretrained checkpoint.
-
 ### 25. Does adding dropout improve SFT?
 
 Three dropout ablations were done: 0.0, 0.05, 0.1
@@ -668,10 +656,13 @@ Three dropout ablations were done: 0.0, 0.05, 0.1
 
 On this experiment, increasing dropout worsened the best held-out response-only validation loss.
 
-# Suggested figures
+![TinyStories sft_training loss](figures/sft_train_loss.png)
 
-Figure 9. Response-only SFT training loss for dropout values 0.0, 0.05 and 0.10.
-Figure 10. Response-only held-out validation loss for the three dropout settings. The zero-dropout run achieves the lowest measured validation loss.
+*Figure 8. Response-only SFT training loss for dropout values 0.0, 0.05 and 0.10.*
+
+![TinyStories sft_val loss](figures/sft_val_loss.png)
+
+*Figure 9. Response-only held-out validation loss for the three dropout settings. The zero-dropout run achieves the lowest measured validation loss.*
 
 ### 26. Validation loss and generation quality are related, but not identical
 
