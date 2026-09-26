@@ -934,10 +934,17 @@ some loss in task performance.
 LoRA after full SFT
 Applying LoRA on top of the already fully fine-tuned model using the same dataset did not improve the starting checkpoint.
 The useful role for this setup would instead be a new specialization task, not another pass over the same objective.
+.
+.
+.
 
-*boga_llm_0 <- first model file prefix (10.7M param)
-boga_llm_2 <- second model file prefix (27.4M param)
-boga_llm_fine_tune(ing) <- second model fine tuning file prefix* 
+----------------------------------------------------------------------------------------------
+
+*boga_llm_0 <- first model file prefix (10.7M param)*
+
+*boga_llm_2 <- second model file prefix (27.4M param)*
+
+*boga_llm_fine_tune(ing) <- second model fine tuning file prefix*
 
 
 
